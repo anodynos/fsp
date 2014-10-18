@@ -1,7 +1,7 @@
 {
   "name": "fsp",
   "description": "A minimal `fs` that returns A+ promises (when). For each `fs.xxx` function, it adds an `fs.xxxP` returning promises.",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "homepage": "http://github.com/anodynos/fsp/",
   "author": {
     "name": "Agelos Pikoulas",
@@ -46,6 +46,7 @@
     "when": "*"
   },
   "devDependencies": {
+    "lodash": "*",
     "chai": "*",
     "chai-as-promised": "*",
     "coffee-script": "*",
