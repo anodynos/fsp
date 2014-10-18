@@ -1,0 +1,59 @@
+{
+  "name": "fsp",
+  "description": "A minimal `fs` that returns A+ promises (when). For each `fs.xxx` function, it adds an `fs.xxxP` returning promises.",
+  "version": "0.1.0",
+  "homepage": "http://github.com/anodynos/fsp/",
+  "author": {
+    "name": "Agelos Pikoulas",
+    "email": "agelos.pikoulas@gmail.com"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "http://www.opensource.org/licenses/mit-license.php"
+    }
+  ],
+  "keywords": [
+    "fs",
+    "promise",
+    "promises",
+    "when",
+    "wrapper",
+    "async"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/anodynos/fsp"
+  },
+  "bugs": {
+    "url": "http://github.com/anodynos/fsp/issues",
+    "email": "agelos.pikoulas@gmail.com"
+  },
+  "main": "./build/code/fsp.js",
+  "preferGlobal": false,
+  "scripts": {
+    "test": "grunt"
+  },
+  "directories": {
+    "doc": "./doc",
+    "dist": "./build"
+  },
+  "engines": {
+    "node": "0.10.x"
+  },
+  "dependencies": {
+    "fs-exists": "*",
+    "when": "*"
+  },
+  "devDependencies": {
+    "chai": "*",
+    "chai-as-promised": "*",
+    "coffee-script": "*",
+    "mocha": "*",
+    "grunt": "0.4.x",
+    "grunt-contrib-clean": "0.4.x",
+    "grunt-contrib-concat": "0.1.x",
+    "grunt-shell": "~0.3.x",
+    "grunt-contrib-watch": "~0.5.x"
+  }
+}
