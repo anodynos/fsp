@@ -2,7 +2,7 @@ chai = require 'chai'
 chai.use require 'chai-as-promised'
 expect = chai.expect
 
-fsp = require '../code/fsp'
+fsp = require 'fsp' #uses fake fsp module in `node_modules`
 
 describe "fsp returns a fulfilling promise `when` executing:", ->
   filename = "testfile.txt"

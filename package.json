@@ -1,7 +1,7 @@
 {
   "name": "fsp",
   "description": "A minimal `fs` that returns A+ promises (when). For each `fs.xxx` function, it adds an `fs.xxxP` returning promises.",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "homepage": "http://github.com/anodynos/fsp/",
   "author": {
     "name": "Agelos Pikoulas",
@@ -43,18 +43,17 @@
   },
   "dependencies": {
     "fs-exists": "*",
-    "when": "*"
+    "when": ">=3.6.2"
   },
   "devDependencies": {
-    "lodash": "*",
     "chai": "*",
     "chai-as-promised": "*",
-    "coffee-script": "*",
-    "mocha": "*",
     "grunt": "0.4.x",
-    "grunt-contrib-clean": "0.4.x",
-    "grunt-contrib-concat": "0.1.x",
-    "grunt-shell": "~0.3.x",
-    "grunt-contrib-watch": "~0.5.x"
+    "grunt-contrib-watch": "~0.5.x",
+    "grunt-urequire": "^0.7.0",
+    "lodash": "*",
+    "mocha": "*",
+    "urequire": "^0.7.0-beta9",
+    "urequire-ab-specrunner": "^0.1.7"
   }
 }
